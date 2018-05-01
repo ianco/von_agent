@@ -19,14 +19,14 @@ from setuptools import setup
 
 
 pkg_name = 'von_agent'
-version = '0.6.5'
+version = '1.0.0'
 
 
 setup(
     name=pkg_name,
     packages=[
         pkg_name,
-        '{}.proto'.format(pkg_name)
+        # '{}.proto'.format(pkg_name)
     ],
     version=version,
     description='VON agents',
