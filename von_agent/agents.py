@@ -974,6 +974,7 @@ class HolderProver(_BaseAgent):
             filt = {}
         rv = None
         creds_json = await anoncreds.prover_get_credentials_for_proof_req(self.wallet.handle, proof_req_json)
+        logger.debug('anoncreds.prover_get_credentials_for_proof_req: >>> json: {}'.format(creds_json))
         creds = json.loads(creds_json)
         cred_ids = set()
 
